@@ -5,21 +5,21 @@
 class Imagemage < Formula
   desc "A focused CLI tool for generating and editing images with Google's Gemini API without the bloat"
   homepage "https://github.com/quinnypig/imagemage"
-  version "0.1.10"
+  version "0.1.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/quinnypig/imagemage/releases/download/v0.1.10/imagemage_0.1.10_Darwin_x86_64.tar.gz"
-      sha256 "2a03e1bd979e9be79e86b90009953b6a5feb9cbf4c9afede6841473bb11c158b"
+      url "https://github.com/quinnypig/imagemage/releases/download/v0.1.11/imagemage_0.1.11_Darwin_x86_64.tar.gz"
+      sha256 "8ad0c9ae5af8b9bc3542be75227048820b061598560779ec2c4ddf41b767a050"
 
       define_method(:install) do
         bin.install "imagemage"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/quinnypig/imagemage/releases/download/v0.1.10/imagemage_0.1.10_Darwin_arm64.tar.gz"
-      sha256 "d263e7bb6c992b0cc7e0dcecccef9ccd099f3ce6c4b036cd9f99e96ffa637b6c"
+      url "https://github.com/quinnypig/imagemage/releases/download/v0.1.11/imagemage_0.1.11_Darwin_arm64.tar.gz"
+      sha256 "23da3bec30d5d3624ed905fc444b7633c40b58af95d163006ea0a31fdf18bbeb"
 
       define_method(:install) do
         bin.install "imagemage"
@@ -29,15 +29,15 @@ class Imagemage < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/quinnypig/imagemage/releases/download/v0.1.10/imagemage_0.1.10_Linux_x86_64.tar.gz"
-      sha256 "e00c972272ef0ad1bc4cb2c002de0b2c52b6d51bb12c9bfd127acc4d01032140"
+      url "https://github.com/quinnypig/imagemage/releases/download/v0.1.11/imagemage_0.1.11_Linux_x86_64.tar.gz"
+      sha256 "014e5ad8e7d161b57a11908a5527c7310ccceeaac918fd9aead8046cb9318b1d"
       define_method(:install) do
         bin.install "imagemage"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/quinnypig/imagemage/releases/download/v0.1.10/imagemage_0.1.10_Linux_arm64.tar.gz"
-      sha256 "9103ed2c1a59ea7b35b19f9f0536643aa26b747f5a6855758b38545333232bdc"
+      url "https://github.com/quinnypig/imagemage/releases/download/v0.1.11/imagemage_0.1.11_Linux_arm64.tar.gz"
+      sha256 "9f59f2ccc09a0df425cce32d77990688545c865ab5fbc2d5b962d527535034ec"
       define_method(:install) do
         bin.install "imagemage"
       end
