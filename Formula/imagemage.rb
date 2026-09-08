@@ -5,21 +5,21 @@
 class Imagemage < Formula
   desc "A tiny CLI for bossing around OpenAI Images and Gemini without installing someone's KPI farm"
   homepage "https://github.com/quinnypig/imagemage"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/quinnypig/imagemage/releases/download/v0.2.3/imagemage_0.2.3_Darwin_x86_64.tar.gz"
-      sha256 "f1a3a9775ab3eef11830f0fdf3ae16f5b00746c27e9c28c40f5b1860ddc7ff7d"
+      url "https://github.com/quinnypig/imagemage/releases/download/v0.2.4/imagemage_0.2.4_Darwin_x86_64.tar.gz"
+      sha256 "ba3bc99d5b0a66bfc01caea97ca58384eb05f9e13f57b146dbc9a8e69186e310"
 
       define_method(:install) do
         bin.install "imagemage"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/quinnypig/imagemage/releases/download/v0.2.3/imagemage_0.2.3_Darwin_arm64.tar.gz"
-      sha256 "1e865f01abfb2b5685b8f40b47c61c1bcdbfc54da2e10a9e0c1e03a63b81b468"
+      url "https://github.com/quinnypig/imagemage/releases/download/v0.2.4/imagemage_0.2.4_Darwin_arm64.tar.gz"
+      sha256 "78e98846b404ed8e1634f5794bcf61914a79bc9305892683e7560156d8cec9e8"
 
       define_method(:install) do
         bin.install "imagemage"
@@ -29,15 +29,15 @@ class Imagemage < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/quinnypig/imagemage/releases/download/v0.2.3/imagemage_0.2.3_Linux_x86_64.tar.gz"
-      sha256 "e3bba07cbd5572d1659d933cbd9a10a8c895ee7063912e290d9a593e17c36559"
+      url "https://github.com/quinnypig/imagemage/releases/download/v0.2.4/imagemage_0.2.4_Linux_x86_64.tar.gz"
+      sha256 "d2a638f7b0ec7c86ba7d23fe40ca21541af3636a3d9e1ba9ae385f5806aeb48a"
       define_method(:install) do
         bin.install "imagemage"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/quinnypig/imagemage/releases/download/v0.2.3/imagemage_0.2.3_Linux_arm64.tar.gz"
-      sha256 "17d35ac2b77929458011eda0b5d7d694bae4d7b16b4f23c425de405464d388c2"
+      url "https://github.com/quinnypig/imagemage/releases/download/v0.2.4/imagemage_0.2.4_Linux_arm64.tar.gz"
+      sha256 "21c1aa42c449f3a71b328f1a541ab942b912d64d02b7ebff46e5a6dce2e1d30d"
       define_method(:install) do
         bin.install "imagemage"
       end
